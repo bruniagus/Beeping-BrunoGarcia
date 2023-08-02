@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Jobs\CalculateOrderTotalJob;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,6 @@ use App\Jobs\CalculateOrderTotalJob;
 |
 */
 
-Route::get('/', function () {\
-    dispatch(new CalculateOrderTotalJob());
+Route::get('/', function () {
     return view('welcome');
 });

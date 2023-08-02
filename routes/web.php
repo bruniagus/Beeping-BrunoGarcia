@@ -16,5 +16,5 @@ use App\Jobs\CalculateOrderTotalJob;
 
 Route::get('/', function () {
     dispatch(new CalculateOrderTotalJob());
-    return view('welcome');
+    return view('index');
 });
